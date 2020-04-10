@@ -1,0 +1,44 @@
+<div class="p-2">
+  <table class="table table-sm table-striped">
+    <tbody>
+      <div style="display: flex;">
+        <p style="margin: 3rem;">Name</p>
+        <p style="margin: 3rem;">Category</p>
+        <p style="margin: 3rem;">Price</p>
+        <p style="margin: 3rem;">Supplier</p>
+        <p style="margin: 3rem;">Ratings</p>
+      </div>
+      <div *ngFor="let product of products" style="display: flex;">
+        <p style="margin: 3rem;">{{ product.name }}</p>
+        <p style="margin: 3rem;">{{ product.category }}</p>
+        <p style="margin: 3rem;">{{ product.price }}</p>
+        <p style="margin: 3rem;">{{ product.supplier?.name || "None" }}</p>
+        <p style="margin: 3rem;">{{ product.ratings?.lengp || 0 }}</p>
+      </div>
+    </tbody>
+  </table>
+  <!-- <button class="btn btn-primary m-1" (click)="getProducts()">
+    get Product
+  </button>
+  <button class="btn btn-primary m-1" (click)="createProduct()">
+    Create Product
+  </button>
+  <button class="btn btn-primary m-1" (click)="createProductAndSupplier()">
+    Create Product and Supplier
+  </button>
+  <button class="btn btn-primary m-1" (click)="replaceProduct()">
+    Replace Product
+  </button>
+  <button class="btn btn-primary m-1" (click)="replaceSupplier()">
+    Replace Supplier
+  </button>
+  <button class="btn btn-primary m-1" (click)="updateProduct()">
+    Update Product
+  </button>
+  <button class="btn btn-primary m-1" (click)="deleteProduct()">
+    Delete Product
+  </button>
+  <button class="btn btn-primary m-1" (click)="deleteSupplier()">
+    Delete Supplier
+  </button> -->
+</div>

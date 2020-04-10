@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "name": "new product",
+      "category": "food",
+      "description": "kit-kat",
+      "price": 50,
+      "supplier": {
+        "supplierId": 1,
+        "name": "mohammed",
+        "city": "db",
+        "state": "Gaza",
+        "products": null
+      },
+      "ratings": [
+        {
+          "ratingId": 1,
+          "stars": 5,
+          "product": null
+        }
+      ]
+    }
+  ]
+}
